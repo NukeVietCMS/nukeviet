@@ -26,9 +26,11 @@ See [LICENSE.txt](LICENSE.txt) for the full license.
   - NukeViet partner: http://nukeviet.vn/vi/partner/
   - NukeViet Education Center: http://nukeviet.edu.vn
   - NukeViet SaaS: http://nukeviet.com (testing)
+  - NukeViet: http://nukevietcms.com
 
 ## Community
   - NukeViet Fanpage: http://facebook.com/nukeviet
+  - NukeViet Fanpage: http://facebook.com/nukevietCMS
   - NukeViet group on FB: https://www.facebook.com/groups/nukeviet/
   - http://twitter.com/nukeviet
   - https://groups.google.com/forum/?fromgroups#!forum/nukeviet
@@ -39,7 +41,7 @@ See [LICENSE.txt](LICENSE.txt) for the full license.
 ## Nukeviet Centre for Research and Development
 VIETNAM OPEN SOURCE DEVELOPMENT JOINT STOCK COMPANY (VINADES.,JSC)
 
-Website: http://vinades.vn | http://nukeviet.vn | http://nukeviet.com
+Website: http://vinades.vn | http://nukeviet.vn | http://nukeviet.com | http://nukevietcms.com
 
 Head Office:
   - Room 1706 - CT2 Nang Huong Building, 583 Nguyen Trai st, Ha Dong dist, Hanoi, Vietnam.
