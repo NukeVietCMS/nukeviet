@@ -1,0 +1,43 @@
+<!-- BEGIN: main --><div class="clear">&nbsp;</div>
+<!-- BEGIN: viewdescription -->
+ 
+<div class="news_column">
+	<div class="alert alert-info clearfix">
+		<h1>{CONTENT.title}</h1>
+		<!-- BEGIN: image -->
+		<img alt="{CONTENT.title}" src="{HOMEIMG1}" class="img-responsive pull-left imghome" />
+		<!-- END: image -->
+		<p>{CONTENT.description}</p>
+	</div>
+</div>
+<!-- END: viewdescription --><div class="viewcatloop col-sm-24 col-xs-24 col-md-24 col-lg-24 "> 
+<!-- BEGIN: viewcatloop -->
+<div class="col-md-{PER_LINE} col-lg-{PER_LINE} col-sm-12 col-xs-12 videos_list">
+	<div class="thumbnail">
+		<!-- BEGIN: image -->
+		<a title="{CONTENT.title}" href="{CONTENT.link}">
+                               <div style="height: {IMGHEIGHT}px;  background-image: url({HOMEIMG1}); " class="item-image baimgc textc vdplay">
+                      <i class="fa fa-play-circle"></i> </div>
+<!--         <img alt="{HOMEIMGALT1}" src="{HOMEIMG1}" style="width:{IMGWIDTH}px;height:{IMGHEIGHT}px;"  class="img-responsive video_img"/>
+ -->        </a>
+		<!-- END: image -->
+		<h4><a class="show" href="{CONTENT.link}" title="{CONTENT.title}">{CONTENT.title_cut}</a></h4>
+		<div class="text-muted">
+			<ul class="list-unstyled">
+				<li>{LANG.by}&nbsp;<a href="{CONTENT.uploader_link}" title="{CONTENT.uploader_name}">{CONTENT.uploader_name}</a></li>
+				<li class="pull-left">{CONTENT.publtime}</li>
+				<li class="spacer pull-left"></li>
+				<li>{CONTENT.hitstotal}&nbsp;{LANG.hits_view}</li>
+			</ul>
+		</div>
+		<p class="clear">{ADMINLINK}</p>
+	</div>
+</div>
+<!-- END: viewcatloop --></div>
+<div class="clear">&nbsp;</div>
+<!-- BEGIN: generate_page -->
+<div class="text-center">
+	{GENERATE_PAGE}
+</div>
+<!-- END: generate_page -->
+<!-- END: main -->
