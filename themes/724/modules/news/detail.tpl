@@ -3,19 +3,19 @@
 <script src="{NV_STATIC_URL}{NV_ASSETS_DIR}/js/star-rating/jquery.MetaData.js" type="text/javascript"></script>
 <link href="{NV_STATIC_URL}{NV_ASSETS_DIR}/js/star-rating/jquery.rating.css" type="text/css" rel="stylesheet"/>
 <link href="{NV_STATIC_URL}{NV_EDITORSDIR}/ckeditor/plugins/codesnippet/lib/highlight/styles/github.css" rel="stylesheet">
-<div class="news_column panel panel-default" itemtype="http://schema.org/NewsArticle" itemscope>
+<div class="news_column panel panel-default" itemtype="https://schema.org/NewsArticle" itemscope>
     <div class="panel-body">
         <h1 class="title margin-bottom-lg" itemprop="headline">{DETAIL.title}</h1>
-        <div class="hidden hide d-none" itemprop="author" itemtype="http://schema.org/Person" itemscope>
+        <div class="hidden hide d-none" itemprop="author" itemtype="https://schema.org/Person" itemscope>
             <span itemprop="name">{SCHEMA_AUTHOR}</span>
         </div>
         <span class="hidden hide d-none" itemprop="datePublished">{SCHEMA_DATEPUBLISHED}</span>
         <span class="hidden hide d-none" itemprop="dateModified">{SCHEMA_DATEPUBLISHED}</span>
         <span class="hidden hide d-none" itemprop="mainEntityOfPage">{SCHEMA_URL}</span>
         <span class="hidden hide d-none" itemprop="image">{SCHEMA_IMAGE}</span>
-        <div class="hidden hide d-none" itemprop="publisher" itemtype="http://schema.org/Organization" itemscope>
+        <div class="hidden hide d-none" itemprop="publisher" itemtype="https://schema.org/Organization" itemscope>
             <span itemprop="name">{SCHEMA_ORGNAME}</span>
-            <span itemprop="logo" itemtype="http://schema.org/ImageObject" itemscope>
+            <span itemprop="logo" itemtype="https://schema.org/ImageObject" itemscope>
                 <span itemprop="url">{SCHEMA_ORGLOGO}</span>
             </span>
         </div>
@@ -50,12 +50,14 @@
                 </ul>
             </div>
         </div>
+		
+		
         <!-- BEGIN: no_public -->
         <div class="alert alert-warning">
             {LANG.no_public}
         </div>
         <!-- END: no_public -->
-        <!-- BEGIN: show_player -->
+         <!-- BEGIN: show_player -->
         <link rel="stylesheet" href="{NV_STATIC_URL}{NV_ASSETS_DIR}/js/plyr/plyr.css" />
         <script src="{NV_STATIC_URL}{NV_ASSETS_DIR}/js/plyr/plyr.polyfilled.js"></script>
         <div class="news-detail-player">

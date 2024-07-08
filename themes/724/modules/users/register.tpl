@@ -1,9 +1,10 @@
 <!-- BEGIN: main -->
-<div class="row centered margin-top-lg margin-bottom-lg">
-<div style="max-width:500px">
-    <div class="page panel panel-default box-shadow bg-lavender">
+<div class="row centered margin-top-lg margin-bottom-lg ues-register">
+<div>
+    <div class="page panel panel-default box-shadow bg-lavender" 
+	style="margin: 20px 0;">
         <div class="panel-body">
-            <h2 class="text-center margin-bottom-lg">{LANG.register}</h2>
+            <h2 class="textc title margin-bottom-lg chuhoa texts">{LANG.register}</h2>
             {FILE "register_form.tpl"}
             <div class="centered margin-top-lg">
                 <ul class="users-menu nav navbar-nav">

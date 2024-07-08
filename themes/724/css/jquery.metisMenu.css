@@ -1,26 +1,25 @@
 .metismenu a {
-    color: #fff !important;
+    color: #009688 !important;
     text-decoration: none !important;
 }
-
 .metismenu .arrow {
     float: right;
     margin-top: -33px;
-    margin-right: 6px;
+    margin-right: 0px;
     color: #fff;
     cursor: pointer;
     text-align: center;
     width: 28px;
     line-height: 28px;
     text-align: center;
-    background: rgba(0, 0, 0, 0);
+    background: #009688;
     border-radius: 14px;
     -webkit-border-radius: 14px;
     font-size: 15px;
 }
 
 .metismenu .arrow:hover {
-    background: rgba(0, 0, 0, 0.15);
+    background: #ff5722;
 }
 
 .metismenu .fa.arrow:before {
@@ -73,9 +72,9 @@
 }
 
 .metismenu .sidebar-nav {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    background: #205fa0;
-    background-image: linear-gradient(to right, #2671b5 4px, #205fa0 4px);
+    border-bottom: 1px solid #0000000d;
+    background: #009688;
+    background-image: linear-gradient(to right, #009688 4px, #ffffff 4px);
     background-repeat: repeat-x;
     margin: 0;
 }
@@ -92,31 +91,26 @@
 }
 
 .metismenu .sidebar-nav ul a {
-    padding: 10px 20px;
+    padding: 10px 10px;
     color: #fff;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05) inset;
+    border-top: 1px solid #00000033;
+    box-shadow: 0 1px 0 #ffffff0d inset;
 }
 
-.metismenu .sidebar-nav ul a:hover,
-.metismenu .sidebar-nav ul a:focus,
-.metismenu .sidebar-nav ul a:active {
-    color: #fff;
+.metismenu .sidebar-nav ul a:hover, .metismenu .sidebar-nav ul a:focus, .metismenu .sidebar-nav ul a:active {
     text-decoration: none;
-    background-image: linear-gradient(to right,
-            #ff6600 4px,
-            rgba(0, 0, 0, 0) 4px);
+    background-image: linear-gradient(to right, #ff6600 4px, #009688 4px);
+    color: #ffffff !important;
 }
-
 .metismenu .sidebar-nav ul ul a {
-    padding: 10px 30px;
-    background-color: #4189c7;
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    background-image: linear-gradient(to right, #ff5722 4px, #f1f1f1 4px);
 }
 
-.metismenu .sidebar-nav ul ul a:hover,
-.metismenu .sidebar-nav ul ul a:focus,
-.metismenu .sidebar-nav ul ul a:active {
-    background-color: #367cb8;
+.metismenu .sidebar-nav ul ul a:hover, .metismenu .sidebar-nav ul ul a:focus, .metismenu .sidebar-nav ul ul a:active {
+    background-color: #009688;
+    background-image: linear-gradient(to right, #009688 4px, #ff5722 4px);
 }
 
 .metismenu .sidebar-nav-item {
@@ -126,3 +120,4 @@
 .metismenu .sidebar-nav-item-icon {
     padding-right: 5px;
 }
+.simple {padding: 0;}

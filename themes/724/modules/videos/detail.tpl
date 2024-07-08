@@ -4,14 +4,9 @@
 <link href="{NV_BASE_SITEURL}{NV_ASSETS_DIR}/js/star-rating/jquery.rating.css" type="text/css" rel="stylesheet"/>
 <div class="detail_container col-xs-24 col-md-24 col-lg-24">
 	<div class="detail_video row">
-		<div class="detail_header cf">
-			<h3 class="title">{DETAIL.title}</h3>
-			<!-- BEGIN: socialbutton -->
-			<div class="social-icon col-xs-12 col-md-12 col-lg-12 clearfix margin-bottom-lg margin-top-lg">
-				<div class="fb-like" data-href="{SELFURL}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true">&nbsp;</div>
-			</div>
-			<div class="clearfix"></div>
-			<!-- END: socialbutton -->
+		<div class="detail_header cf textc"> 
+			<h1 class="title texts chuhoa"><a href="#{DETAIL.title}" title="{DETAIL.title}">{DETAIL.title}</h1> 
+
 		</div>
 		<!-- BEGIN: no_jwp_lic_admin -->
 		<div class="alert alert-warning"><a href="{SETTING_LINKS}" title="{LANG.no_jwp_lic_admin}"><strong>{LANG.no_jwp_lic_admin}</strong>&nbsp;<em class="fa fa-external-link"></em></a> </div>
@@ -30,6 +25,11 @@
 				<!-- END: vid_jw_content -->
 			</div>
 		</div>
+					<!-- BEGIN: socialbutton -->
+			<div class="social-icon col-xs-12 col-md-12 col-lg-12 clearfix margin-bottom-lg margin-top-lg">
+				<div class="fb-like" data-href="{SELFURL}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true">&nbsp;</div>
+			</div> <div class="clearfix"></div>
+			<!-- END: socialbutton -->
 		<div class="uploader cf margin-bottom-lg margin-top-lg">
 			<div class="pd0 col-xs-3 col-md-2 col-sm-2 col-lg-1">
 				<a href="{DETAIL.uploader_link}" title="{DETAIL.uploader_name}">
@@ -38,8 +38,7 @@
 			</div>
 			
 			<div class="col-md-18 col-sm-18 col-lg-18">
-				<p><a href="{DETAIL.uploader_link}" title="{DETAIL.uploader_name}"><strong>{DETAIL.uploader_name}</strong></a></p>
-				<p>{DETAIL.publtime}</p>
+				<p><a href="{DETAIL.uploader_link}" title="{DETAIL.uploader_name}"><strong>{DETAIL.uploader_name}</strong></a> - {DETAIL.publtime}</p>
 			</div>
 			
 			<!-- BEGIN: hitstotal -->
@@ -206,7 +205,7 @@
 				<div class="videos-home-thumbnail pull-left col-md-24 col-lg-24 col-xs-24">
 					<a class="clearfix" title="{RELATED_NEW.title}" href="{RELATED_NEW.link}">
                      <div style="height: {IMGHEIGHT}px;  background-image: url({RELATED_NEW.imghome}); " class="item-image baimgc textc vdplay">
-                      <i class="fas fa-play-circle"></i> </div>
+                      <i class="fa fa-play-circle"></i> </div>
 						<!-- <img src="{RELATED_NEW.imghome}" alt="{HOMEIMGALT}" class="imghome img-responsive" width="{IMGWIDTH}" height="{IMGHEIGHT}"/> -->
 					</a>
 				</div>
@@ -240,7 +239,7 @@
 				<div class="videos-home-thumbnail pull-left col-md-24 col-lg-24 col-xs-24">
 					<a class="clearfix" title="{RELATED.title}" href="{RELATED.link}">
                                            <div style="height: {IMGHEIGHT}px;  background-image: url({RELATED.imghome}); " class="item-image baimgc textc vdplay">
-                      <i class="fas fa-play-circle"></i> </div>
+                      <i class="fa fa-play-circle"></i> </div>
 					<!-- 	<img src="{RELATED.imghome}" alt="{HOMEIMGALT}" class="imghome img-responsive" width="{IMGWIDTH}" height="{IMGHEIGHT}"/>
 					 --></a>
 				</div>

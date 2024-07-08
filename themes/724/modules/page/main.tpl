@@ -6,7 +6,7 @@
 
 <div class="page panel panel-default" itemtype="http://schema.org/Article" itemscope>
     <div class="panel-body">
-        <h1 class="title margin-bottom-lg" itemprop="headline">{CONTENT.title}</h1>
+	<div id="title"><span class="title1"></span><h1 class="title chuhoa" itemprop="headline">{CONTENT.title}</h1><span  class="title2"></span></div>
         <div class="hidden hide d-none" itemprop="author" itemtype="http://schema.org/Organization" itemscope>
             <span itemprop="name">{SCHEMA_ORGNAME}</span>
         </div>
@@ -20,15 +20,7 @@
                 <span itemprop="url">{SCHEMA_ORGLOGO}</span>
             </span>
         </div>
-        <!-- BEGIN: socialbutton -->
-        <div class="margin-bottom">
-            <div style="display:flex;align-items:flex-start;">
-                <!-- BEGIN: facebook --><div class="margin-right"><div class="fb-like" style="float:left!important;margin-right:0!important" data-href="{CONTENT.link}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div></div><!-- END: facebook -->
-                <!-- BEGIN: twitter --><div class="margin-right"><a href="http://twitter.com/share" class="twitter-share-button">Tweet</a></div><!-- END: twitter -->
-                <!-- BEGIN: zalo --><div><div class="zalo-share-button" data-href="" data-oaid="{ZALO_OAID}" data-layout="1" data-color="blue" data-customize=false></div></div><!-- END: zalo -->
-            </div>
-        </div>
-        <!-- END: socialbutton -->
+
 
         <!-- BEGIN: imageleft -->
         <figure class="article left pointer" onclick="modalShowByObj('#imgpreview');">
@@ -43,7 +35,7 @@
         <!-- END: imageleft -->
 
         <!-- BEGIN: description -->
-        <div class="hometext margin-bottom-lg" itemprop="description">{CONTENT.description}</div>
+        <div class="hometext margin-bottom-lg none" itemprop="description">{CONTENT.description}</div>
         <!-- END: description -->
 
         <!-- BEGIN: imagecenter -->
@@ -60,6 +52,15 @@
         </div>
     </div>
 </div>
+        <!-- BEGIN: socialbutton -->
+        <div class="margin-bottom">
+            <div style="display:flex;align-items:flex-start;">
+                <!-- BEGIN: facebook --><div class="margin-right"><div class="fb-like" style="float:left!important;margin-right:0!important" data-href="{CONTENT.link}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div></div><!-- END: facebook -->
+                <!-- BEGIN: twitter --><div class="margin-right"><a href="http://twitter.com/share" class="twitter-share-button">Tweet</a></div><!-- END: twitter -->
+                <!-- BEGIN: zalo --><div><div class="zalo-share-button" data-href="" data-oaid="{ZALO_OAID}" data-layout="1" data-color="blue" data-customize=false></div></div><!-- END: zalo -->
+            </div>
+        </div>
+        <!-- END: socialbutton -->
 <!-- BEGIN: adminlink -->
 <p class="text-center margin-bottom-lg">
     <a class="btn btn-primary" href="{ADMIN_EDIT}"><em class="fa fa-edit fa-lg">&nbsp;</em>{GLANG.edit}</a>
@@ -73,12 +74,14 @@
     </div>
 </div>
 <!-- END: comment -->
+
 <!-- BEGIN: other -->
 <div class="page panel panel-default">
     <div class="panel-body">
-        <ul class="nv-list-item">
+        <ul class="nv-list-item manpagelink">
             <!-- BEGIN: loop -->
-            <li><em class="fa fa-angle-double-right">&nbsp;</em><h3><a title="{OTHER.title}" href="{OTHER.link}">{OTHER.title}</a></h3></li>
+            <li class="col-xs-24 col-sm-12 col-md-12"><a title="{OTHER.title}" href="{OTHER.link}"><h2><em class="fa fa-angle-double-right">&nbsp;</em>
+			{OTHER.title}</h2></a></li>
             <!-- END: loop -->
        </ul>
     </div>

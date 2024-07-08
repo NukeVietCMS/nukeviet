@@ -22,7 +22,10 @@
             <div class="row">
                 <div class="{WCT}">
                     <!-- BEGIN: image -->
-                    <a title="{CONTENT.title}" href="{CONTENT.link}" {CONTENT.target_blank}><img src="{HOMEIMG}" alt="{HOMEIMGALT}" width="{IMGWIDTH}" class="img-thumbnail pull-left imghome" /></a>
+                    <a title="{CONTENT.title}" href="{CONTENT.link}" {CONTENT.target_blank}>
+					<div style="height:{IMGHEIGHT}px; width:{IMGWIDTH}px; background-image: url({HOMEIMG});" class="baimgc fl p5 m10 textc">
+					<img src="{HOMEIMG}" alt="{HOMEIMGALT}"   class="img-thumbnail" /></a>
+					</div>
                     <!-- END: image -->
                     <h3>
                         <a title="{CONTENT.title}" href="{CONTENT.link}" {CONTENT.target_blank}>{CONTENT.title}</a>
@@ -44,11 +47,14 @@
 
                 <!-- BEGIN: related -->
                 <div class="col-md-8">
-                    <ul class="related list-items">
+                    <ul class="related list-items nw100">
                         <!-- BEGIN: loop -->
-                        <li class="{CLASS}">
-                            <a class="show h4" href="{OTHER.link}" title="{OTHER.title}" {OTHER.target_blank} <!-- BEGIN: tooltip -->data-content="{OTHER.hometext_clean}" data-img="{OTHER.imghome}" data-rel="tooltip" data-placement="{TOOLTIP_POSITION}"<!-- END: tooltip --> >{OTHER.title}</a>
-                        </li>
+						                <li class="{CLASS2} col-xs-24 col-sm-24 col-md-24 tinkhac relatedloop ">
+                   <div> <a class="show h4" href="{OTHER.link}" {OTHER.target_blank} <!-- BEGIN: tooltip -->data-content="{OTHER.hometext_clean}" data-img="{OTHER.imghome}" data-rel="tooltip" data-placement="{TOOLTIP_POSITION}"<!-- END: tooltip --> title="{OTHER.title}">
+					<img alt="{CONTENT.hometext_clean}" src="{OTHER.imghome}" width="{IMGWIDTH0}"/>
+					{OTHER.title}</a></div>
+ 
+						</li>
                         <!-- END: loop -->
                     </ul>
                 </div>

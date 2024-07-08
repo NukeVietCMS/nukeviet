@@ -2,9 +2,9 @@
 <!-- BEGIN: listcat -->
 <div class="news_column">
 	<div class="panel panel-default clearfix">
-		<div class="panel-heading">
+		<div class="panel-heading videosviewgrid">
 			<ul class="list-inline sub-list-icon" style="margin: 0">
-				<li><h4><a title="{CAT.title}" href="{CAT.link}"><span>{CAT.title}</span></a></h4></li>
+				<li id="title"><h4 class="title texts chuhoa"><a title="{CAT.title}" href="{CAT.link}"><span>{CAT.title}</span></a></h4></li>
 				<!-- BEGIN: subcatloop -->
 				<li class="hidden-xs"><h4><a class="dimgray" title="{SUBCAT.title}" href="{SUBCAT.link}">{SUBCAT.title}</a></h4></li>
 				<!-- END: subcatloop -->
@@ -22,7 +22,7 @@
 					<div class="videos-home-thumbnail pull-left col-md-24 col-lg-24 col-xs-24">
 						<a class="clearfix" title="{CONTENT.title}" href="{CONTENT.link}">
                        <div style="height: {IMGHEIGHT}px;  background-image: url({HOMEIMG}); " class="item-image baimgc textc vdplay">
-                 <i class="fas fa-play-circle"></i>  <span class="dlb">   {CONTENT.title_cut}</span> </div>
+                 <i class="fa fa-play-circle"></i>  <span class="dlb">   {CONTENT.title_cut}</span> </div>
 							<!-- <img src="{HOMEIMG}" alt="{HOMEIMGALT}" class="imghome img-responsive" width="{IMGWIDTH}" height="{IMGHEIGHT}"/> -->
 						</a>
 					</div>

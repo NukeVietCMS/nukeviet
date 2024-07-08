@@ -1,0 +1,21 @@
+#tagcloud .smallest{ font-size: 14px }
+#tagcloud .small { font-size: 15px; } 
+#tagcloud .large { font-size: 15px; }
+#tagcloud .largest { font-size: 15px;color: #333; }
+#tagcloud .taglink {
+    display: inline-block;
+    text-transform: capitalize;
+    border-bottom: 1px ridge #e5e5e5;
+    min-width: 150px;
+    overflow: hidden;
+    height: 28px;
+    padding: 5px 0; 
+   border-left: 0px ridge #e5e5e5; 
+}
+#tagcloud .taglink:hover{ background: #eee0; }
+#tagcloud .fa, #tagcloud .fas {
+    margin-left: 5px;
+    color: #4caf50;
+}
+@media (max-width: 350px) {
+#tagcloud .taglink {border-left: 3px ridge #e5e5e5; }}

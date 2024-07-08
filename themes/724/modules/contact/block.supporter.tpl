@@ -1,6 +1,8 @@
 <!-- BEGIN: main -->
 
+<div class='blocksupporter'>
 <!-- BEGIN: loop -->
+
 
 	<!-- BEGIN: image -->
 	<div class="text-center m-bottom">
@@ -8,10 +10,14 @@
 	</div>
 	<!-- END: image -->
 	
-	<p class="text-center m-bottom">
+	<div id="title">
+<h3 class="title texts chuhoa" itemprop="headline">{DEPARTMENT.full_name}</h3>
+</div>
+<!-- 	<p class="text-center m-bottom">
 		<strong class="text-uppercase text-danger">{DEPARTMENT.full_name}</strong>
-	</p>
+	</p> -->
 	<!-- BEGIN: supporter -->
+	<div class='nvhotro khung p10'>
 	<p class="text-center m-bottom">
 		<strong>{SUPPORTER.full_name}</strong>
 	</p>
@@ -20,18 +26,41 @@
 		<li><em class="fa fa-phone"></em>&nbsp;<!-- BEGIN: item -->
 			<!-- BEGIN: comma -->&nbsp; <!-- END: comma -->
 			<!-- BEGIN: href -->
-			<a href="tel:{PHONE.href}">
+			<a title='Gọi ngay: {PHONE.number}'href="tel:{PHONE.href}">
 				<!-- END: href -->{PHONE.number}<!-- BEGIN: href2 -->
 		</a>
 		<!-- END: href2 -->
 			<!-- END: item --></li>
 		<!-- END: phone -->
+		
+		<!-- BEGIN: zalo -->
+		<li><i class="fas fa-headset"></i> <span class="zaloicon">Zalo</span>
+					<span>&nbsp;<!-- BEGIN: item -->
+			<!-- BEGIN: comma --> - <!-- END: comma -->
+			<a title='Liên hệ qua Zalo: {ZALO.value}' target="_blank" href="https://zalo.me/{ZALO.value}?body=KG: BP {DEP.full_name} {SITE_NAME} ">{ZALO.value}</a>
+		<!-- END: item --></li>
+		<!-- END: zalo -->
+		
 		<!-- BEGIN: email -->
 		<li><em class="fa fa-envelope"></em>&nbsp;<!-- BEGIN: item -->
 			<!-- BEGIN: comma -->&nbsp; <!-- END: comma -->
 			<a href="{DEPARTMENT.emailhref}">{EMAIL}</a>
 		<!-- END: item --></li>
 		<!-- END: email -->
+		
+		<!-- BEGIN: web -->
+		<li><em class="fa fa-globe"></em>&nbsp;<!-- BEGIN: item -->
+			<!-- BEGIN: comma --> - <!-- END: comma -->
+			<a title='Xem web {WEB.value}' target="_blank" href="//{WEB.value}">{WEB.value}</a>
+		<!-- END: item --></li>
+		<!-- END: web -->
+		<!-- BEGIN: bando -->
+		<li><em class="fa fa-globe"></em>&nbsp;<!-- BEGIN: item -->
+			<!-- BEGIN: comma --> - <!-- END: comma -->
+			<a target="_blank" href="https://www.google.com/maps/search/{BANDO.value}">{BANDO.value}</a>
+		<!-- END: item --></li>
+		<!-- END: bando -->
+		
 		<!-- BEGIN: yahoo -->
 		<li><em class="icon-yahoo"></em>&nbsp;<!-- BEGIN: item -->
 			<!-- BEGIN: comma -->&nbsp; <!-- END: comma -->
@@ -65,9 +94,9 @@
 		<!-- BEGIN: other -->
 		<li>{OTHER.name}:&nbsp; {OTHER.value}</li>
 		<!-- END: other -->
-	</ul>
+	</ul></div><br/>
 	<!-- END: supporter -->
-	<hr />
+ 
 <!-- END: loop -->
-
+</div>
 <!-- END: main -->

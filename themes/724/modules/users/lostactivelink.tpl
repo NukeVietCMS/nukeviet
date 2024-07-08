@@ -6,7 +6,7 @@
     <div class="login-box">
         <div class="page panel panel-default margin-top-lg box-shadow bg-lavender">
             <div class="panel-body">
-                <h2 class="text-center margin-bottom-lg">{LANG.lostactive_pagetitle}</h2>
+                <h2 class="textc title margin-bottom-lg chuhoa texts">{LANG.lostactive_pagetitle}</h2>
                 <!-- BEGIN: step1 -->
                 <form id="lostpassForm" action="{FORM1_ACTION}" method="post" role="form" class="form-horizontal margin-bottom-lg"<!-- BEGIN: recaptcha3 --> data-recaptcha3="1"<!-- END: recaptcha3 -->>
                     <div class="nv-info margin-bottom">

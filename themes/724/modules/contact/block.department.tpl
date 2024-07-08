@@ -3,7 +3,7 @@
 		<table class="table">
 			<tbody>
 				<tr>
-					<td colspan="2" class="active"><strong>{LANG.department}: {DEPARTMENT.full_name}</strong></td>
+					<td colspan="2" class="textc title texts chuhoa"><strong>{LANG.department}: {DEPARTMENT.full_name}</strong></td>
 				</tr>
 				<!-- BEGIN: phone -->
 				<tr>
@@ -17,6 +17,17 @@
 					<td>{DEPARTMENT.address}</td>
 				</tr>
 				<!-- END: address -->
+				<!-- BEGIN: zalo -->
+				<tr>
+					
+				<td class="zalo">  Zalo </td><td><!-- BEGIN: item --><!-- BEGIN: comma --> - <!-- END: comma --><a class='hoadau' target="_blank" href="//zalo.me/{ZALO.value}" title="Liên hệ qua Zalo: {ZALO.value}" >{ZALO.value}</a><!-- END: item --></td>
+				<!-- END: zalo -->
+				</tr><tr>
+				
+				<!-- BEGIN: bando --><td class="bando"><em class="fa fa-map-marker"></em> Vị trí </td>  <td><!-- BEGIN: item --><!-- BEGIN: comma --> - <!-- END: comma --><a class='hoadau' target="_blank" href="https://www.google.com/maps/search/{BANDO.value}" title="Bản đồ Maps đường đi đến  vị trí này" ><em class="fa fa-map-marker"></em> Xem Maps </a><!-- END: item --></td><!-- END: bando -->
+				</tr><tr>
+				<!-- BEGIN: web --><td class="web"><em class="fa fa-globe"></em> Website </td><td><!-- BEGIN: item --><!-- BEGIN: comma --> -  <!-- END: comma --><a target="_blank" href="//{WEB.value}" title="{SITE_NAME}" >{WEB.value}</a><!-- END: item --></td><!-- END: web -->
+				</tr>
 				<!-- BEGIN: fax -->
 				<tr>
 					<td>{LANG.fax}</td>

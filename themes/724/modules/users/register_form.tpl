@@ -78,7 +78,7 @@
         <!-- BEGIN: show_birthday -->
         <div class="form-group">
             <div class="input-group">
-                <input type="text" class="form-control datepicker {FIELD.required} {FIELD.class}" data-provide="datepicker" placeholder="{FIELD.title}" value="{FIELD.value}" name="birthday" readonly="readonly" style="background-color:#fff" onchange="validErrorHidden(this);" onfocus="datepickerShow(this);" data-mess=""/>
+                <input type="text" class="form-control datepicker {FIELD.required} {FIELD.class}" data-provide="datepicker" placeholder="{FIELD.title}" value="{FIELD.value}" name="birthday" readonly="readonly" style="background-color:#fff; z-index: 100;" onchange="validErrorHidden(this);" onfocus="datepickerShow(this);" data-mess=""/>
                 <span class="input-group-addon pointer" onclick="button_datepickerShow(this);"> <em class="fa fa-calendar"></em> </span>
             </div>
         </div>

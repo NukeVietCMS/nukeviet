@@ -19,15 +19,16 @@
         </div>
         <!-- END: block_topcat -->
         <div class="panel-body">
+		<div style=" height:{IMGHEIGHT}px">
             <!-- BEGIN: image -->
-            <a href="{CONTENT.link}" title="{CONTENT.title}" {CONTENT.target_blank}><img alt="{HOMEIMGALT}" src="{HOMEIMG}" width="{IMGWIDTH}" class="img-thumbnail pull-left imghome" /></a>
+            <a href="{CONTENT.link}" title="{CONTENT.title}" {CONTENT.target_blank}><img alt="{HOMEIMGALT}" src="{HOMEIMG}" width="{IMGWIDTH}" height="{IMGHEIGHT}px" class="img-thumbnail pull-left imghome" /></a>
             <!-- END: image -->
-            <h3>
+            <h2>
                 <a href="{CONTENT.link}" title="{CONTENT.title}" {CONTENT.target_blank}>{CONTENT.title}</a>
                 <!-- BEGIN: newday -->
                 <span class="icon_new">&nbsp;</span>
                 <!-- END: newday -->
-            </h3>
+            </h2>
             <div class="text-muted">
                 <ul class="list-unstyled list-inline">
                     <li><em class="fa fa-clock-o">&nbsp;</em> {CONTENT.publtime}</li>
@@ -37,18 +38,23 @@
                     <!-- END: comment -->
                 </ul>
             </div>
-            {CONTENT.hometext}
+           <h5 class="hometextviewcat"> {CONTENT.hometext} </h5>
             <!-- BEGIN: adminlink -->
             <p class="text-right">
                 {ADMINLINK}
             </p>
             <!-- END: adminlink -->
-
+ </div><div class="clear">&nbsp;</div>
             <!-- BEGIN: related -->
-            <ul class="related list-items">
+            <ul class="related list-items w100">
                 <!-- BEGIN: loop -->
-                <li class="{CLASS}">
-                    <a class="show h4" href="{OTHER.link}" {OTHER.target_blank} <!-- BEGIN: tooltip -->data-content="{OTHER.hometext_clean}" data-img="{OTHER.imghome}" data-rel="tooltip" data-placement="{TOOLTIP_POSITION}"<!-- END: tooltip --> title="{OTHER.title}">{OTHER.title}</a>
+              <li class="{CLASS2} col-xs-12 col-sm-8 col-md-6 tinkhac ">
+                   <div class="relatedlink"> <h3><a class="show h4" href="{OTHER.link}" {OTHER.target_blank} <!-- BEGIN: tooltip -->data-content="{OTHER.hometext_clean}" data-img="{OTHER.imghome}" data-rel="tooltip" data-placement="{TOOLTIP_POSITION}"<!-- END: tooltip --> title="{OTHER.title}">
+					<img alt="{CONTENT.hometext_clean}" src="{OTHER.imghome}" width="{IMGWIDTH0}" class="img-thumbnail pull-left imghome" style="max-height: 40px;    width: auto;"/>
+					{OTHER.title}</a></h3></div>
+ 
+						</li>
+ 
                 </li>
                 <!-- END: loop -->
             </ul>

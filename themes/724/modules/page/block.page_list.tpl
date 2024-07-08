@@ -1,8 +1,8 @@
 <!-- BEGIN: main -->
-<ul style="list-style: circle; padding-left: 20px">
+<ul class="pagelist">
 	<!-- BEGIN: loop -->
 	<li>
-		<a href="{ROW.link}" title="{ROW.title}">{ROW.title_clean60}</a>
+		<a class="apagelist" href="{ROW.link}" title="{ROW.title}">{ROW.title_clean60}</a>
 	</li>
 	<!-- END: loop  -->
 </ul>

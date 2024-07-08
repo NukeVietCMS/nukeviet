@@ -1,4 +1,4 @@
-<!-- BEGIN: main --><div class="clear"></div>
+<!-- BEGIN: main --><div class="clear"> </div>
 <style>
 .videoplayer .chd{ max-height: 46px; overflow: hidden; color: #888; } 
 .videocl li{ margin-bottom: 5px; border-bottom-width: 1px; border-bottom-color: #c1c1c1; border-bottom-style: dotted; line-height: 25px;height: 56px; overflow: hidden; }
@@ -31,7 +31,7 @@ a .fa-play-circle     {color: #f00;}  a:hover .fa-play-circle     {color: #03a9f
 			<!-- BEGIN: img -->
 			<img src="{ROW.thumb}" alt="{ROW.title}" width="60px" class="img-thumbnail pull-left mr5"/>  
 			<!-- END: img -->
-			<i class="fas fa-play-circle"></i> {ROW.title}</a>
+			<i class="fa fa-play-circle"></i> {ROW.title}</a>
 		</li>
 		<!-- END: loop -->
 	</ul>
@@ -75,4 +75,5 @@ a .fa-play-circle     {color: #f00;}  a:hover .fa-play-circle     {color: #03a9f
 	  });
 	</script>
 	<!-- END: jwplayer -->
+	<div class="clear"> </div>
 <!-- END: main -->

@@ -1,17 +1,17 @@
 <!-- BEGIN: main -->
 <div class="page panel panel-default">
     <div class="panel-body">
-        <h3 class="text-center margin-bottom-lg">{LANG.info_title}</h3>
+        <h3 class="text-center margin-bottom-lg p10 chuhoa texts">{LANG.info_title}</h3>
         <div id="search-form" class="text-center">
             <form action="{DATA.action}" name="form_search" method="get" id="form_search" role="form">
                 <input type="hidden" name="{NV_LANG_VARIABLE}" value="{NV_LANG_DATA}" />
                 <input type="hidden" name="{NV_NAME_VARIABLE}" value="{MODULE_NAME}" />
                 <div class="m-bottom">
-                    <div class="form-group">
+                    <div class="form-group col-xs-24 col-sm-12 col-md-12">
                         <label class="sr-only" for="search_query">{LANG.key_title}</label>
                         <input class="form-control" id="search_query" name="q" value="{DATA.key}" maxlength="{NV_MAX_SEARCH_LENGTH}" placeholder="{LANG.key_title}" />
                     </div>
-                    <div class="form-group">
+                    <div class="form-group col-xs-24 col-sm-12 col-md-12">
                         <label class="sr-only" for="search_query_mod">{LANG.type_search}</label>
                         <select name="m" id="search_query_mod" class="form-control">
                             <option value="all">{LANG.search_on_site}</option>

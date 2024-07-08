@@ -9,7 +9,8 @@
                 <!-- BEGIN: loop -->
                 <div class="contentdiv clearfix">
                     <a title="{HOTSNEWS.title}" href="{HOTSNEWS.link}" {HOTSNEWS.target_blank}><img class="img-responsive" id="slImg{HOTSNEWS.imgID}" src="{PIX_IMG}" alt="{HOTSNEWS.image_alt}" /></a>
-                    <h3><a title="{HOTSNEWS.title}" href="{HOTSNEWS.link}" {HOTSNEWS.target_blank}>{HOTSNEWS.title}</a></h3>
+                    <h3 class="textc chuhoa "><a title="{HOTSNEWS.title}" href="{HOTSNEWS.link}" {HOTSNEWS.target_blank}>{HOTSNEWS.title}</a></h3>
+					 
                 </div>
                 <!-- END: loop -->
             </div>
@@ -18,9 +19,9 @@
         <!-- END: hots_news_img -->
         <div class="col-md-12">
             <div id="tabs" class="tabs">
-                <ul class="clearfix list-none list-items">
+                <ul class="chuhoa clearfix list-none list-items">
                     <!-- BEGIN: loop_tabs_title -->
-                    <li>
+                    <li  class="textc col-xs-12 col-sm-12 col-md-6" title="{TAB_TITLE.title}">
                         <a href="#tabs-{TAB_TITLE.id}"><span><span>{TAB_TITLE.title}</span></span></a>
                     </li>
                     <!-- END: loop_tabs_title -->
