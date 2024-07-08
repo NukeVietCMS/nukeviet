@@ -14,11 +14,8 @@
 <!-- BEGIN: main -->
 <link rel="stylesheet" type="text/css" media="screen" href="{NV_BASE_SITEURL}themes/{BLOCK_THEME}/css/slimmenu.css" />
 
-<ul class="slimmenu ">
-<li class="logomenu"> 
- <a title="{SITE_NAME}" href="{THEME_SITE_HREF}"><img src="{LOGO_SRC}" alt="{SITE_NAME}"></a>
-	</li>
-	<li class="none trangchu"> 
+<ul class="slimmenu">
+	<li>
 		<a title="{LANG.Home}" href="{THEME_SITE_HREF}"><em class="fa fa-lg fa-home">&nbsp;</em> <span class="hidden-sm"> {LANG.Home} </span></a>
 	</li>
 	<!-- BEGIN: loopcat1 -->

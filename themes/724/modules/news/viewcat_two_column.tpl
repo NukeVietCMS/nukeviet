@@ -45,8 +45,8 @@
         <!-- END: content -->
         <ul class="related list-items">
             <!-- BEGIN: other -->
-            <li class="col-xs-24 col-sm-12 col-md-12">
-                <a class="catcontentloop" class="show h4" href="{NEWSTOP.link}" {NEWSTOP.target_blank} <!-- BEGIN: tooltip -->data-content="{NEWSTOP.hometext_clean}" data-img="{NEWSTOP.imghome}" data-placement="{TOOLTIP_POSITION}" data-rel="tooltip"<!-- END: tooltip --> title="{NEWSTOP.title}"> <em class="fa fa-angle-double-right">&nbsp;</em> {NEWSTOP.title}</a>
+            <li>
+                <a class="show h4" href="{NEWSTOP.link}" {NEWSTOP.target_blank} <!-- BEGIN: tooltip -->data-content="{NEWSTOP.hometext_clean}" data-img="{NEWSTOP.imghome}" data-placement="{TOOLTIP_POSITION}" data-rel="tooltip"<!-- END: tooltip --> title="{NEWSTOP.title}">{NEWSTOP.title}</a>
             </li>
             <!-- END: other -->
         </ul>
@@ -67,7 +67,7 @@
         </div>
         <div class="panel-body">
             <!-- BEGIN: content -->
-            <h3 class="fl">
+            <h3>
                 <a href="{CONTENT.link}" title="{CONTENT.title}" {CONTENT.target_blank}>{CONTENT.title}</a>
                 <!-- BEGIN: newday -->
                 <span class="icon_new">&nbsp;</span>
@@ -83,14 +83,7 @@
                 </ul>
             </div>
             <!-- BEGIN: image -->
-			
-			
-			<a title="{CONTENT.title}" href="{CONTENT.link}" {CONTENT.target_blank}>
-					<div style="height:{IMGHEIGHT0}px; width:{IMGHEIGHT0}px; background-image: url({HOMEIMG01}); margin-top: 0;" class="baimgc fl p5 m05 textc">
-					<img src="{HOMEIMG01}" alt="{HOMEIMGALT01}"   class="img-thumbnail" /></a>
-					</div>
-					
-          
+            <a href="{CONTENT.link}" title="{CONTENT.title}" {CONTENT.target_blank}><img alt="{HOMEIMGALT01}" src="{HOMEIMG01}" width="{IMGWIDTH0}" class="img-thumbnail pull-left imghome" /></a>
             <!-- END: image -->
             <p>{CONTENT.hometext}</p>
             <!-- BEGIN: adminlink -->
@@ -99,12 +92,10 @@
             </p>
             <!-- END: adminlink -->
             <!-- END: content -->
-            <ul class="related list-items w100">
+            <ul class="related list-items">
                 <!-- BEGIN: other -->
-                <li class="{CLASS2} col-xs-24 col-sm-24 col-md-24 tinkhac ">
-                   <div> <a class="show h4 catcontentloop" href="{CONTENT.link}" {CONTENT.target_blank} <!-- BEGIN: tooltip -->data-content="{CONTENT.hometext_clean}" data-img="{CONTENT.imghome}" data-rel="tooltip" data-placement="{TOOLTIP_POSITION}"<!-- END: tooltip --> title="{CONTENT.title}">
-					<img alt="{CONTENT.hometext_clean}" src="{CONTENT.imghome}" width="{IMGWIDTH0}" class="img-thumbnail pull-left imghome" style="max-height: 30px;    width: auto;"/>
-					{CONTENT.title}</a></div>
+                <li class="{CLASS}">
+                    <a class="show h4" href="{CONTENT.link}" {CONTENT.target_blank} <!-- BEGIN: tooltip -->data-content="{CONTENT.hometext_clean}" data-img="{CONTENT.imghome}" data-rel="tooltip" data-placement="{TOOLTIP_POSITION}"<!-- END: tooltip --> title="{CONTENT.title}">{CONTENT.title}</a>
                 </li>
                 <!-- END: other -->
             </ul>

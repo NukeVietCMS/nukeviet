@@ -2,10 +2,7 @@
 <!-- BEGIN: viewdescription -->
 <div class="news_column">
     <div class="alert alert-info clearfix">
-        	<div id="title"><span class="title1"></span>
-<h1 class="title texts chuhoa" >{CONTENT.title}</h1>
-<span class="title2"></span></div>
-		
+        <h1>{CONTENT.title}</h1>
         <!-- BEGIN: image -->
         <img alt="{CONTENT.title}" src="{HOMEIMG1}" width="{IMGWIDTH1}" class="img-thumbnail pull-left imghome" />
         <!-- END: image -->

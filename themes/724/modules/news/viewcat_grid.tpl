@@ -2,10 +2,7 @@
 <!-- BEGIN: viewdescription -->
 <div class="news_column">
 	<div class="alert alert-info clearfix">
-		<div id="title"><span class="title1"></span>
-<h3 class="title texts chuhoa" >{CONTENT.title}</h3>
-<span class="title2"></span></div>
-		
+		<h3>{CONTENT.title}</h3>
 		<!-- BEGIN: image -->
 		<img alt="{CONTENT.title}" src="{HOMEIMG1}" width="{IMGWIDTH1}" class="img-thumbnail pull-left imghome" />
 		<!-- END: image -->
@@ -53,17 +50,11 @@
 <!-- END: featuredloop -->
 
 <!-- BEGIN: viewcatloop -->
-<div class="col-xs-24 col-sm-12 col-md-6 newscatgirdmobi">
+<div class="col-sm-12 col-md-8">
 	<div class="thumbnail">
-		<a title="{CONTENT.title}" href="{CONTENT.link}" {CONTENT.target_blank}>
-	 
-		        	<div class="viewcatgrid textc boxs28" style="max-width: 100%; width: {IMGWIDTH12}px; height: {IMGHEIGHT1}px; margin: auto; background-image: url({HOMEIMG1}); ">
-
-			<div class="chuhoa textc texts  titlenews">{CONTENT.title} </div></div>
-		
-		</a>
+		<a title="{CONTENT.title}" href="{CONTENT.link}" {CONTENT.target_blank}><img alt="{HOMEIMGALT1}" src="{HOMEIMG1}" width="{IMGWIDTH1}" class="img-thumbnail"/></a>
 		<div class="caption text-center">
-			<h4 class="viewcattitle"><a class="show" href="{CONTENT.link}" {CONTENT.target_blank} <!-- BEGIN: tooltip -->data-content="{CONTENT.hometext_clean}" data-img="" data-rel="tooltip" data-placement="{TOOLTIP_POSITION}"<!-- END: tooltip --> title="{CONTENT.title}">{CONTENT.title}</a></h4>
+			<h4><a class="show" href="{CONTENT.link}" {CONTENT.target_blank} <!-- BEGIN: tooltip -->data-content="{CONTENT.hometext_clean}" data-img="" data-rel="tooltip" data-placement="{TOOLTIP_POSITION}"<!-- END: tooltip --> title="{CONTENT.title}">{CONTENT.title}</a></h4>
 			<span>{ADMINLINK}</span>
 		</div>
 	</div>

@@ -6,7 +6,7 @@
  * @author VINADES.,JSC <contact@vinades.vn>
  * @copyright (C) 2009-2021 VINADES.,JSC. All rights reserved
  * @license GNU/GPL version 2 or any later version
- * @see https://github.com/nukevietCmS The NukeViet CMS GitHub project
+ * @see https://github.com/nukeviet The NukeViet CMS GitHub project
  */
 
 if (!defined('NV_SYSTEM') or !defined('NV_MAINFILE')) {
@@ -301,14 +301,7 @@ function nv_site_theme($contents, $full = true)
                 $arr_cat_title_i = [
                     'catid' => 0,
                     'title' => $module_info['custom_title'],
-					'sitename' => $global_config['site_name'],
-					'sitelogo' => NV_BASE_SITEURL . $global_config['site_logo'],
                     'link' => NV_BASE_SITEURL . 'index.php?' . NV_LANG_VARIABLE . '=' . NV_LANG_DATA . '&amp;' . NV_NAME_VARIABLE . '=' . $module_name
-					
- 
-
-
-					
                 ];
                 array_unshift($array_mod_title_copy, $arr_cat_title_i);
             }
@@ -318,9 +311,6 @@ function nv_site_theme($contents, $full = true)
                     $arr_cat_title_i['position'] = $border++;
                     $xtpl->assign('BREADCRUMBS', $arr_cat_title_i);
                     $xtpl->parse('main.breadcrumbs.loop');
-					
-
-					
                 }
             }
             $xtpl->parse('main.breadcrumbs');

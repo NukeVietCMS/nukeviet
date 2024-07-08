@@ -110,7 +110,7 @@
 <!-- BEGIN: results -->
 <div class="panel panel-default">
     <div class="panel-body">
-        <h3 class="text-center chuhoa"><em class="fa fa-filter">&nbsp;</em>{LANG.search_on} <span class="moduletitle">{TITLE_MOD}</span></h3>
+        <h3 class="text-center"><em class="fa fa-filter">&nbsp;</em>{LANG.search_on} {TITLE_MOD}</h3>
         <hr />
         <!-- BEGIN: noneresult -->
         <p>
@@ -119,28 +119,25 @@
         <!-- END: noneresult -->
 
         <!-- BEGIN: result -->
-		<div class="col-xs-24 col-sm-12 col-md-12">
-        <div class="clearfix ">
-            <h2><a class="chuhoa" href="{LINK}" {TARGET_BLANK}>{TITLEROW}</a></h2>
+        <div class="clearfix">
+            <h3><a href="{LINK}" {TARGET_BLANK}>{TITLEROW}</a></h3>
             <div class="text-justify col-sm-24">
-                <div style="height:{IMG_HEIGHT}px;overflow: hidden;display: contents;">
+                <p>
                     <!-- BEGIN: result_img -->
-                    <img src="{IMG_SRC}" alt="" border="0" width="{IMG_WIDTH}px " class="img-thumbnail pull-left" style="margin: 0 5px 5px 0" />
+                    <img src="{IMG_SRC}" alt="" border="0" width="{IMG_WIDTH}px" class="img-thumbnail pull-left" style="margin: 0 5px 5px 0" />
                     <!-- END: result_img -->
-                    <p class="noidungtimkiem" style="height:{IMG_HEIGHT}px;overflow: hidden;display: contents;">{CONTENT}</p>
-               
-            
+                    {CONTENT}
+                </p>
+            </div>
             <div class="text-right">
-                {LANG.post_name}: {AUTHOR}
+                {AUTHOR}
             </div>
             <div class="text-right">
                 <strong>{LANG.source_title}: </strong><span>{SOURCE}</span>
-            </div></div></div>
+            </div>
         </div>
-        </div>
-     
+        <hr />
         <!-- END: result -->
-		<div class="clearfix"></div>
         <!-- BEGIN: pages_result -->
         <div class="text-center">
             {VIEW_PAGES}
@@ -157,11 +154,11 @@
 
         <h4><strong>{LANG.search_adv_internet} :</strong></h4>
         <div align="center">
-            <form method="get" action="https://www.google.com/search" target="_top">
+            <form method="get" action="http://www.google.com/search" target="_top">
                 <input type="hidden" name="domains" value="{MY_DOMAIN}" />
 
                 <div class="form-group">
-                    <div class="col-md-8"><img src="https://www.google.com/logos/Logo_25wht.gif" border="0" alt="Google" />
+                    <div class="col-md-8"><img src="http://www.google.com/logos/Logo_25wht.gif" border="0" alt="Google" />
                     </div>
                     <div class="col-md-8"><input type="text" name="q" maxlength="255" value="{KEY}" id="sbi" class="form-control" />
                     </div>
@@ -181,4 +178,3 @@
     </div>
 </div>
 <!-- END: results -->
-<div class="clearfix"></div>

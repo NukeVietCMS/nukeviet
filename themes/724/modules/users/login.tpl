@@ -8,7 +8,7 @@
                     <a title="{SITE_NAME}" href="{THEME_SITE_HREF}"><img class="logo" src="{LOGO_SRC}" alt="{SITE_NAME}"></a>
                 </div>
                 <!-- END: redirect2 -->
-                <h2 class="textc title margin-bottom-lg chuhoa texts">{LANG.login}</h2>
+                <h2 class="text-center margin-bottom-lg">{LANG.login}</h2>
                 {FILE "login_form.tpl"}
                 <div class="text-center margin-top-lg" id="other_form">
                     <!-- BEGIN: navbar --><a href="{NAVBAR.href}" class="margin-right-lg"><em class="fa fa-caret-right margin-right-sm"></em>{NAVBAR.title}</a><!-- END: navbar -->

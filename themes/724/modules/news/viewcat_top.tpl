@@ -2,10 +2,7 @@
 <!-- BEGIN: viewdescription -->
 <div class="news_column">
     <div class="alert alert-info clearfix">
-	<div id="title" title="{CONTENT.title}"><span class="title1"></span>
-<h1 class="title texts chuhoa"  >{CONTENT.title}</h1>
-<span class="title2"></span></div>
-        
+        <h1>{CONTENT.title}</h1>
         <!-- BEGIN: image -->
         <img alt="{CONTENT.title}" src="{HOMEIMG1}" width="{IMGWIDTH1}" id="imghome" class="img-thumbnail pull-left imghome" />
         <!-- END: image -->
@@ -47,10 +44,8 @@
             <!-- END: catcontent -->
             <ul class="related list-items">
                 <!-- BEGIN: catcontentloop -->
-                <li class="col-xs-24 col-sm-12 col-md-12" >
-                    <a class="catcontentloop" title="{CONTENT.title}" href="{CONTENT.link}" {CONTENT.target_blank}> 
-					<em class="fa fa-angle-double-right">&nbsp;</em>
-					{CONTENT.title}</a>
+                <li>
+                    <em class="fa fa-angle-right">&nbsp;</em><a title="{CONTENT.title}" href="{CONTENT.link}" {CONTENT.target_blank}>{CONTENT.title}</a>
                     <!-- BEGIN: newday -->
                     <span class="icon_new"></span>
                     <!-- END: newday -->

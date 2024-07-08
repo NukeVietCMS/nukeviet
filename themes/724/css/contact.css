@@ -24,10 +24,11 @@
     color: #333;
     display: none;
 }
+
 #contactButton .ctb {
     position: fixed;
     bottom: 0;
-    right: 110px;
+    right: 15px;
     z-index: 1000;
     text-align: center;
 }

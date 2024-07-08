@@ -107,12 +107,8 @@
 
 /* LOGIN, REGISTER FORM BOX */
 .login-box {
-    width: auto;
+    width: 334px;
 }
-.header-nav-inner .personalArea .login-box {
-    width: 350px;
-}
-
 
 @media (max-width: 399px) {
     .login-box {
@@ -229,7 +225,7 @@ fieldset[disabled] .openid-zalo:focus {
 
 .fa-zalo::before {
     font: normal normal bold 15px/1 Arial;
-    content: "";
+    content: "Z";
 }
 
 .openid-facebook {
@@ -320,14 +316,4 @@ fieldset[disabled] .openid-single-sign-on:focus {
     background-color: #5cb85c;
     border-color: #4cae4c;
     cursor: inherit;
-}
-.form-detail .btn-group .radio-box input[type="radio"] {
-    border: #d30000;
-    display: inline-block;
-}
-.ues-register {}
-.ues-register .bg-lavender{}
-.bg-lavender h2{
-    line-height: 30px;
-    background: #fff;
 }
